@@ -22,8 +22,8 @@ class _LoginPageState extends State<LoginPage> {
           height: 20,
         ),
         Text(
-          "Welcome${!name.isEmpty ? ", " + name : ""}",
-          style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+          "Welcome${name.isNotEmpty ? {", " + name} : ""}",
+          style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         ),
         const SizedBox(
           height: 20,
